@@ -1,0 +1,172 @@
+const { useState, useEffect } = React;
+
+function App() {
+  const [visibleSections, setVisibleSections] = useState({});
+
+  useEffect(() => {
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          setVisibleSections(prev => ({ ...prev, [entry.target.id]: true }));
+        }
+      });
+    }, { threshold: 0.1 });
+
+    document.querySelectorAll('section[id]').forEach(section => observer.observe(section));
+    return () => observer.disconnect();
+  }, []);
+
+  return (
+    <div style={{ fontFamily: 'system-ui' }}>
+      {/* Header */}
+      <header className="fixed top-0 left-0 right-0 z-30 px-4 py-4 bg-white/90 backdrop-blur-md shadow-sm flex justify-center items-center">
+        <h1 className="text-xl md:text-2xl font-bold animate-gradient-text">Offeriq</h1>
+      </header>
+
+      {/* Hero Section */}
+      <section id="hero" className="min-h-screen flex items-center justify-center p-6 relative overflow-hidden mt-16">
+        <div className="absolute inset-0 bg-gradient-to-br from-purple-100 via-indigo-50 to-pink-100 opacity-40"></div>
+        <div className="max-w-3xl text-center mx-auto z-10">
+          <h1 className="text-4xl md:text-5xl lg:text-6xl font-extrabold mb-6 animate-gradient-text">
+            Make Your Offer Clear and Irresistible.
+          </h1>
+          <p className="text-lg text-gray-600 mb-10">
+            I rewrite every word that explains, pitches, and sells your coaching — so people instantly "get it" and want to work with you.
+          </p>
+          <a href="#booking"
+             className="inline-block px-6 py-3 md:px-8 md:py-4 text-white rounded-full shadow-lg hover:shadow-xl transform hover:-translate-y-1 transition duration-300 animate-gradient-text"
+             style={{
+               backgroundImage: 'linear-gradient(270deg, #4f46e5, #ec4899, #3b82f6, #ec4899)',
+               backgroundSize: '600% 600%',
+               animation: 'gradientText 8s ease infinite',
+               fontWeight: 'bold'
+             }}>
+            Book Free Offer Review
+          </a>
+        </div>
+      </section>
+
+      {/* Problem Section */}
+      <section id="problem" className="px-6 py-16 bg-white/90 backdrop-blur-sm">
+        <div className="max-w-3xl mx-auto text-center">
+          <h2 className="text-3xl font-bold mb-6 animate-gradient-text"
+              style={{
+                backgroundImage: 'linear-gradient(270deg, #4f46e5, #ec4899, #3b82f6, #ec4899)',
+                backgroundSize: '600% 600%',
+                WebkitBackgroundClip: 'text',
+                backgroundClip: 'text',
+                color: 'transparent'
+              }}>
+            You're a great coach. But your offer isn't clear.
+          </h2>
+          <ul className="space-y-4 text-left max-w-xl mx-auto mt-6">
+            <li className="flex items-start space-x-2 p-2">
+              <span className="text-red-500">×</span>
+              <span>Your bio confuses people</span>
+            </li>
+            <li className="flex items-start space-x-2 p-2">
+              <span className="text-red-500">×</span>
+              <span>Your link page gets no clicks</span>
+            </li>
+            <li className="flex items-start space-x-2 p-2">
+              <span className="text-red-500">×</span>
+              <span>Your pitch doesn’t lead to calls</span>
+            </li>
+            <li className="flex items-start space-x-2 p-2">
+              <span className="text-red-500">×</span>
+              <span>People ghost after asking, 'So what do you do?'</span>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      {/* SellReady 7 Section */}
+      <section id="sellready" className="px-6 py-16 bg-gradient-to-br from-indigo-50 to-pink-50">
+        <div className="max-w-4xl mx-auto text-center">
+          <div className="mb-6">
+            <h3 className="text-xl font-semibold mb-2 animate-gradient-text"
+                style={{
+                  backgroundImage: 'linear-gradient(270deg, #4f46e5, #ec4899, #3b82f6, #ec4899)',
+                  backgroundSize: '600% 600%',
+                  WebkitBackgroundClip: 'text',
+                  backgroundClip: 'text',
+                  color: 'transparent'
+                }}>
+              Introducing
+            </h3>
+            <h2 className="text-4xl md:text-5xl font-extrabold mb-4 animate-gradient-text"
+                style={{
+                  backgroundImage: 'linear-gradient(270deg, #4f46e5, #ec4899, #3b82f6, #ec4899)',
+                  backgroundSize: '600% 600%',
+                  WebkitBackgroundClip: 'text',
+                  backgroundClip: 'text',
+                  color: 'transparent'
+                }}>
+              SellReady 7
+            </h2>
+          </div>
+          <p className="text-lg text-gray-700 mb-8">
+            I don’t fix one line. I fix everything. You’ll walk away with a complete set of rewritten words for your offer — across all the places your audience sees it.
+          </p>
+          <ul className="grid grid-cols-1 sm:grid-cols-2 gap-4 text-left max-w-2xl mx-auto">
+            <li className="flex items-center space-x-2 p-2 hover:bg-indigo-50 rounded-md transition-all duration-500">
+              <span className="text-green-500">✓</span>
+              <span>Instagram Bio</span>
+            </li>
+            <li className="flex items-center space-x-2 p-2 hover:bg-indigo-50 rounded-md transition-all duration-500">
+              <span className="text-green-500">✓</span>
+              <span>Link-in-Bio or Stan Store buttons</span>
+            </li>
+            <li className="flex items-center space-x-2 p-2 hover:bg-indigo-50 rounded-md transition-all duration-500">
+              <span className="text-green-500">✓</span>
+              <span>DM and sales call script</span>
+            </li>
+            <li className="flex items-center space-x-2 p-2 hover:bg-indigo-50 rounded-md transition-all duration-500">
+              <span className="text-green-500">✓</span>
+              <span>Offer announcement post/caption</span>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      {/* Final CTA */}
+      <section id="booking" className="px-6 py-16 bg-gradient-to-b from-indigo-50 to-pink-50 text-center">
+        <div className="max-w-3xl mx-auto">
+          <h2 className="text-3xl font-bold mb-6 animate-gradient-text"
+              style={{
+                backgroundImage: 'linear-gradient(270deg, #4f46e5, #ec4899, #3b82f6, #ec4899)',
+                backgroundSize: '600% 600%',
+                WebkitBackgroundClip: 'text',
+                backgroundClip: 'text',
+                color: 'transparent'
+              }}>
+            Let’s Rewrite Your Offer — So It Sells.
+          </h2>
+          <p className="text-xl font-bold mb-10 text-gray-700">
+            Book a free review. I’ll audit your offer and show you exactly what I’d fix — before we discuss pricing.
+          </p>
+          <a href="https://calendly.com" 
+             target="_blank"
+             className="inline-block px-6 py-3 md:px-8 md:py-4 text-white rounded-full shadow-lg hover:shadow-xl transform hover:-translate-y-1 transition duration-300 animate-gradient-text"
+             style={{
+               backgroundImage: 'linear-gradient(270deg, #4f46e5, #ec4899, #3b82f6, #ec4899)',
+               backgroundSize: '600% 600%',
+               animation: 'gradientText 8s ease infinite',
+               fontWeight: 'bold'
+             }}>
+            Book My Free Offer Review
+          </a>
+        </div>
+      </section>
+
+      {/* Footer */}
+      <footer className="text-center text-gray-500 text-sm py-6">
+        © {new Date().getFullYear()} Offeriq. All rights reserved.
+      </footer>
+    </div>
+  );
+}
+
+// Render the app
+const root = ReactDOM.createRoot(document.getElementById('root'));
+root.render(<App />);
