@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Offeriq – Make Your Offer Clear and Irresistible</title>
+  <script src="https://cdn.tailwindcss.com"></script> 
+  <style>
+    @keyframes gradientText {
+      0% { background-position: 0% 50%; }
+      50% { background-position: 100% 50%; }
+      100% { background-position: 0% 50%; }
+    }
+
+    .animate-gradient-text {
+      background: linear-gradient(270deg, #4f46e5, #ec4899, #3b82f6, #ec4899);
+      background-size: 600% 600%;
+      background-clip: text;
+      -webkit-background-clip: text;
+      color: transparent;
+      animation: gradientText 8s ease infinite;
+    }
+
+    .animate-gradient-button {
+      background-image: linear-gradient(270deg, #4f46e5, #ec4899, #3b82f6, #ec4899);
+      background-size: 600% 600%;
+      color: white;
+      animation: gradientText 8s ease infinite;
+    }
+
+    .step-number {
+      display: inline-block;
+      min-width: 24px;
+      font-weight: bold;
+      font-size: 1.25rem;
+      background: linear-gradient(270deg, #4f46e5, #ec4899, #3b82f6, #ec4899);
+      background-size: 600% 600%;
+      background-clip: text;
+      -webkit-background-clip: text;
+      color: transparent;
+      animation: gradientText 8s ease infinite;
+    }
+
+    @media (max-width: 640px) {
+      h1.text-6xl {
+        font-size: 1.75rem;
+      }
+      h2.text-3xl {
+        font-size: 1.5rem;
+      }
+      h3.text-xl {
+        font-size: 1.125rem;
+      }
+    }
+  </style>
+</head>
+<body class="bg-gradient-to-b from-blue-50 via-white to-pink-50 text-gray-800 font-sans leading-relaxed tracking-tight">
+
+  <!-- Header -->
+  <header class="fixed top-0 left-0 right-0 z-30 px-4 py-4 bg-white/90 backdrop-blur-md shadow-sm flex justify-center items-center">
+    <h1 class="text-xl md:text-2xl font-bold animate-gradient-text"
+      style="background: linear-gradient(270deg, #4f46e5, #ec4899, #3b82f6, #ec4899); background-size: 600% 600%;">
+      Offeriq
+    </h1>
+  </header>
+
+  <!-- Hero Section -->
+  <section id="hero" class="min-h-screen flex items-center justify-center px-6 py-20 relative overflow-hidden pt-32 mt-16">
+    <div class="absolute inset-0 bg-gradient-to-br from-purple-100 via-indigo-50 to-pink-100 opacity-40 animate-pulse" style="opacity: 0.4;"></div>
+    <div class="max-w-3xl text-center mx-auto z-10">
+      <h1 class="text-4xl md:text-5xl lg:text-6xl font-extrabold leading-tight mb-6 animate-gradient-text"
+        style="background: linear-gradient(270deg, #4f46e5, #ec4899, #3b82f6, #ec4899); background-size: 600% 600%;">
+        Make Your Offer Clear and Irresistible.
+      </h1>
+      <p class="text-lg md:text-xl text-gray-600 mb-10">
+        I rewrite every word that explains, pitches, and sells your coaching — so people instantly "get it" and want to work with you.
+      </p>
+      <a href="#booking"
+        class="inline-block px-6 py-3 md:px-8 md:py-4 text-white rounded-full shadow-lg hover:shadow-xl transform hover:-translate-y-1 transition duration-300 animate-gradient-button"
+        style="background: linear-gradient(270deg, #4f46e5, #ec4899, #3b82f6, #ec4899);">
+        Book Free Offer Review
+      </a>
+    </div>
+  </section>
+
+  <!-- Problem Section -->
+  <section id="problem" class="px-6 py-16 bg-white/90 backdrop-blur-sm">
+    <div class="max-w-3xl mx-auto text-center">
+      <h2 class="text-3xl font-bold mb-6 animate-gradient-text"
+        style="background: linear-gradient(270deg, #4f46e5, #ec4899, #3b82f6, #ec4899); background-size: 600% 600%;">
+        You're a great coach. But your offer isn't clear.
+      </h2>
+      <ul class="space-y-4 text-left max-w-xl mx-auto">
+        <li class="flex items-start space-x-2 p-2 rounded-md">
+          <span class="text-red-500 mt-1">×</span>
+          <span>Your bio confuses people</span>
+        </li>
+        <li class="flex items-start space-x-2 p-2 rounded-md">
+          <span class="text-red-500 mt-1">×</span>
+          <span>Your link page gets no clicks</span>
+        </li>
+        <li class="flex items-start space-x-2 p-2 rounded-md">
+          <span class="text-red-500 mt-1">×</span>
+          <span>Your pitch doesn’t lead to calls</span>
+        </li>
+        <li class="flex items-start space-x-2 p-2 rounded-md">
+          <span class="text-red-500 mt-1">×</span>
+          <span>People ghost after asking, 'So what do you do?'</span>
+        </li>
+      </ul>
+      <p class="mt-6 text-gray-600 italic">I fix the words that sell your service — with total clarity.</p>
+    </div>
+  </section>
+
+  <!-- SellReady 7 Section -->
+  <section id="sellready" class="px-6 py-16 bg-gradient-to-br from-indigo-50 to-pink-50">
+    <div class="max-w-4xl mx-auto text-center">
+      <div class="mb-6">
+        <h3 class="text-xl font-semibold mb-2 animate-gradient-text"
+          style="background: linear-gradient(270deg, #4f46e5, #ec4899, #3b82f6, #ec4899); background-size: 600% 600%;">
+          Introducing
+        </h3>
+        <h2 class="text-4xl md:text-5xl font-extrabold mb-4 animate-gradient-text"
+          style="background: linear-gradient(270deg, #4f46e5, #ec4899, #3b82f6, #ec4899); background-size: 600% 600%;">
+          SellReady 7
+        </h2>
+      </div>
+      <p class="text-lg text-gray-700 mb-8">
+        I don’t fix one line. I fix everything. You’ll walk away with a complete set of rewritten words for your offer — across all the places your audience sees it.
+      </p>
+      <ul class="grid grid-cols-1 sm:grid-cols-2 gap-4 text-left max-w-2xl mx-auto">
+        <li class="flex items-center space-x-2 p-2 hover:bg-indigo-50 rounded-md transition-all duration-500">
+          <span class="text-green-500">✓</span>
+          <span>Instagram Bio</span>
+        </li>
+        <li class="flex items-center space-x-2 p-2 hover:bg-indigo-50 rounded-md transition-all duration-500">
+          <span class="text-green-500">✓</span>
+          <span>Link-in-Bio or Stan Store buttons</span>
+        </li>
+        <li class="flex items-center space-x-2 p-2 hover:bg-indigo-50 rounded-md transition-all duration-500">
+          <span class="text-green-500">✓</span>
+          <span>DM and sales call script</span>
+        </li>
+        <li class="flex items-center space-x-2 p-2 hover:bg-indigo-50 rounded-md transition-all duration-500">
+          <span class="text-green-500">✓</span>
+          <span>Offer announcement post/caption</span>
+        </li>
+        <li class="flex items-center space-x-2 p-2 hover:bg-indigo-50 rounded-md transition-all duration-500">
+          <span class="text-green-500">✓</span>
+          <span>Landing page or website copy</span>
+        </li>
+        <li class="flex items-center space-x-2 p-2 hover:bg-indigo-50 rounded-md transition-all duration-500">
+          <span class="text-green-500">✓</span>
+          <span>Any other offer-based copy (Google Docs, emails, Notion)</span>
+        </li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- How It Works -->
+  <section id="how-it-works" class="px-6 py-16 bg-white/90 backdrop-blur-sm">
+    <div class="max-w-4xl mx-auto text-center">
+      <h2 class="text-3xl font-bold text-center mb-12 animate-gradient-text"
+        style="background: linear-gradient(270deg, #4f46e5, #ec4899, #3b82f6, #ec4899); background-size: 600% 600%;">
+        Your 8-Step Clarity Journey
+      </h2>
+      <div class="space-y-8 max-w-3xl mx-auto">
+        <div class="flex items-start space-x-4">
+          <span class="step-number">1</span>
+          <div>Book free review call or DM chat</div>
+        </div>
+        <div class="flex items-start space-x-4">
+          <span class="step-number">2</span>
+          <div>We review your current messaging</div>
+        </div>
+        <div class="flex items-start space-x-4">
+          <span class="step-number">3</span>
+          <div>You share all your offer links (bio, DM, site, etc.)</div>
+        </div>
+        <div class="flex items-start space-x-4">
+          <span class="step-number">4</span>
+          <div>We agree on what’s needed + scope (we’ll discuss pricing then)</div>
+        </div>
+        <div class="flex items-start space-x-4">
+          <span class="step-number">5</span>
+          <div>I rewrite all your offer messaging in 7 days</div>
+        </div>
+        <div class="flex items-start space-x-4">
+          <span class="step-number">6</span>
+          <div>I deliver your Clarity Kit (Notion/Google Doc)</div>
+        </div>
+        <div class="flex items-start space-x-4">
+          <span class="step-number">7</span>
+          <div>You get 4 weeks of free rewrite support (1 update/week)</div>
+        </div>
+        <div class="flex items-start space-x-4">
+          <span class="step-number">8</span>
+          <div>You’re covered by a 30-day satisfaction guarantee</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Guarantee + Support -->
+  <section id="guarantee" class="px-6 py-16 bg-gradient-to-br from-indigo-50 to-pink-50">
+    <div class="max-w-3xl mx-auto text-center">
+      <h2 class="text-3xl font-bold mb-6 animate-gradient-text"
+        style="background: linear-gradient(270deg, #4f46e5, #ec4899, #3b82f6, #ec4899); background-size: 600% 600%;">
+        You’re Covered, Start to Finish.
+      </h2>
+      <ul class="space-y-4 text-left max-w-xl mx-auto">
+        <li class="flex items-start space-x-2 p-2 hover:bg-indigo-50 rounded-md transition-all duration-500">
+          <span class="text-green-500 mt-1">✓</span>
+          <div>
+            <strong>30-Day Satisfaction Guarantee</strong><br/>
+            If you're not happy, I'll revise or refund — no awkwardness.
+          </div>
+        </li>
+        <li class="flex items-start space-x-2 p-2 hover:bg-indigo-50 rounded-md transition-all duration-500">
+          <span class="text-green-500 mt-1">✓</span>
+          <div>
+            <strong>4 Weeks. 4 Rewrite Requests.</strong><br/>
+            After delivery, you can request 1 update per week for 4 weeks — to refine, adjust, or improve your offer copy.
+          </div>
+        </li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- Who It's For -->
+  <section id="for-whom" class="px-6 py-16 bg-white/90 backdrop-blur-sm">
+    <div class="max-w-4xl mx-auto text-center">
+      <h2 class="text-3xl font-bold mb-10 animate-gradient-text"
+        style="background: linear-gradient(270deg, #4f46e5, #ec4899, #3b82f6, #ec4899); background-size: 600% 600%;">
+        Who This Is For
+      </h2>
+      <div class="grid grid-cols-1 sm:grid-cols-3 gap-6 max-w-4xl mx-auto">
+        <div class="p-4 sm:p-6 bg-white rounded-xl shadow-md hover:shadow-lg border border-gray-100 transition-all duration-500">
+          Coaches who are struggling to explain their offer clearly
+        </div>
+        <div class="p-4 sm:p-6 bg-white rounded-xl shadow-md hover:shadow-lg border border-gray-100 transition-all duration-500">
+          Coaches getting low engagement or no DMs
+        </div>
+        <div class="p-4 sm:p-6 bg-white rounded-xl shadow-md hover:shadow-lg border border-gray-100 transition-all duration-500">
+          Coaches who want to sound like a pro (without sounding salesy)
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Me -->
+  <section id="about" class="px-6 py-16 bg-gradient-to-br from-indigo-50 to-pink-50">
+    <div class="max-w-3xl mx-auto text-center">
+      <h2 class="text-3xl font-bold mb-6 animate-gradient-text"
+        style="background: linear-gradient(270deg, #4f46e5, #ec4899, #3b82f6, #ec4899); background-size: 600% 600%;">
+        About Me
+      </h2>
+      <p class="text-lg text-gray-700">
+        Hi, I’m Tirthankar — founder of Offeriq. I built this service to help good coaches sound great. Because the right words create trust. And trust books calls.
+      </p>
+    </div>
+  </section>
+
+  <!-- Testimonials -->
+  <section id="testimonials" class="px-6 py-16 bg-white/90 backdrop-blur-sm">
+    <div class="max-w-3xl mx-auto text-center">
+      <h2 class="text-3xl font-bold mb-10 animate-gradient-text"
+        style="background: linear-gradient(270deg, #4f46e5, #ec4899, #3b82f6, #ec4899); background-size: 600% 600%;">
+        What Clients Will Say Soon...
+      </h2>
+      <blockquote class="italic text-gray-700 border-l-4 border-indigo-300 pl-4 mb-4">
+        “I finally have an offer that makes people DM me.”
+      </blockquote>
+      <blockquote class="italic text-gray-700 border-l-4 border-indigo-300 pl-4 mb-4">
+        “This was the missing piece in my coaching business.”
+      </blockquote>
+      <p class="mt-6 text-sm text-gray-500">
+        These are sample results based on what this service is built to deliver. Real testimonials coming soon.
+      </p>
+    </div>
+  </section>
+
+  <!-- Final CTA -->
+  <section id="booking" class="px-6 py-16 bg-gradient-to-b from-indigo-50 to-pink-50">
+    <div class="max-w-3xl mx-auto text-center">
+      <h2 class="text-3xl font-bold mb-6 animate-gradient-text"
+        style="background: linear-gradient(270deg, #4f46e5, #ec4899, #3b82f6, #ec4899); background-size: 600% 600%;">
+        Let’s Rewrite Your Offer — So It Sells.
+      </h2>
+      <h3 class="text-2xl font-bold mb-10 text-gray-700">
+        Book a free review. I’ll audit your offer and show you exactly what I’d fix — before we discuss pricing.
+      </h3>
+      <a href="https://calendly.com"  target="_blank"
+        class="inline-block px-6 py-3 md:px-8 md:py-4 text-white rounded-full shadow-lg hover:shadow-xl transform hover:-translate-y-1 transition duration-300 animate-gradient-button"
+        style="background: linear-gradient(270deg, #4f46e5, #ec4899, #3b82f6, #ec4899);">
+        Book My Free Offer Review
+      </a>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="text-center text-gray-500 text-sm py-6">
+    © <script>document.write(new Date().getFullYear())</script> Offeriq. All rights reserved.
+  </footer>
+
+</body>
+</html>
